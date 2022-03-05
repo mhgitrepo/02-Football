@@ -63,9 +63,7 @@ nav ul li>a{
     position: relative;
     bottom: 30px;
 }
-.hero-info > h1{
-    width: 485px;
-    height: 230px;
+.hero-info h1{
     color: #fff;
     font-size: 64px;
     line-height: 80px;
@@ -73,7 +71,7 @@ nav ul li>a{
 }
 .hero-btn{
     position: relative;
-    top: 36px;
+    top: 25px;
 }
 .fa-arrow-right{
     margin-left: 8px;
@@ -82,4 +80,206 @@ nav ul li>a{
     width: 556.01px;
 }
 
-/* Main Area For Palyers */
+/* Main Area For Players */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-container{
+    width: 1060px;
+    margin: 60px 0;
+}
+.player-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.player{
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player img{
+    width: 100%;
+}
+.player-info{
+    margin-top: 16px;
+}
+.player-info h3{
+    color: #18191F;
+    font-size: 28px;
+}
+.player-info > p{
+    color: #6C6C6C;
+    padding-top: 10px;
+}
+
+/* Footer Area */
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+.footer-container img{
+    width: 483px;
+}
+
+.fa-instagram, .fa-dribbble, .fa-twitter, .fa-youtube{
+    width: 32px;
+    height: 32px;
+    background-color: #E7E7E8;
+    color: #969BAB;
+    border-radius: 16px;
+}
+.fa-brands:before{
+    position: relative;
+    top: 8px;
+    left: 8px;
+}
+.footer-container p{
+    font-size: 18px;
+    margin-bottom: 44px;
+}
+
+
+
+
+/* -------------------------------------------Media Queries-------------------------------------------- */
+
+/* For Mobile */
+@media only screen and (max-width:688px){
+    /* Utilities */
+    header{
+        height: 585px;
+    }
+    .container{
+        width: 90%;
+    }
+    .nav-container{
+        display: none;
+    }
+    /* Hero Area */
+    .hero-area {
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+        padding: 15px;
+    }
+    .hero-info > h1 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .hero-banner img{
+        width: 329px;
+        height: 259.17px;
+    }
+
+    /* Main Area For Players */
+    main {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .main-container {
+        width: 90%;
+        margin: 60px 0;
+        
+    }
+    .player-cards {
+        grid-template-columns: 1fr;
+    }
+    .player-info h3 {
+        font-size: 22px;
+    }
+
+    /* Footer Area */
+    .footer-container img{
+        margin-bottom: -5px;
+    }
+}
+
+/* For Tablet */
+@media only screen and (min-width: 688px) and (max-width: 992px){
+    /* Utilities */
+    header{
+        height: 400px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        width: 90%;
+        margin-top: 0;
+    }
+    .nav-container{
+        display: none;
+    }
+    .hero-area {
+        column-gap: 0;
+        padding: 0px 30px;
+    }
+    .hero-info > h1 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .btn{
+        padding: 8px 15px;
+    }
+    .hero-banner img {
+        width: 370px;
+    }
+
+    /* Main Area For Players */
+    .main-container {
+        width: 90%;
+    }
+    .player-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 0 30px;
+    }
+
+    /* Footer Area */
+    .footer-container img{
+        margin-bottom: -10px;
+    }
+}
+
+    /* For Notebook */
+
+@media only screen and (min-width: 992px) and (max-width: 1366px) {
+    /* utilities */
+    header {
+        height: 540px;
+    }
+    .container {
+        width: 90%;
+    }
+    
+    /* Hero Area */
+    .hero-area {
+        column-gap: 0;
+    }
+    .hero-info > h1 {
+        font-size: 50px;
+        line-height: 65px;
+    }
+    .hero-banner img {
+        width: 100%;
+    }
+
+    /* Main Area For Players */
+    .main-container {
+        width: 90%;
+    }
+    .player-cards {
+        gap: 25px;
+    }
+    .player-info h3 {
+        font-size: 25px;
+    }
+
+    /* Footer Area */
+    .footer-container img {
+        width: 35%;
+    }
+}
