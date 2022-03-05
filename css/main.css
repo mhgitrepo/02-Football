@@ -83,6 +83,10 @@ nav ul li>a{
 }
 .hero-banner img{
     width: 556.01px;
+    transition: .8s ease-in-out;
+}
+header:hover .hero-banner img{
+    transform: rotate(15deg);
 }
 
 /* Main Area For Players */
